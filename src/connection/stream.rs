@@ -141,7 +141,7 @@ impl Stream {
         self.shared.lock()
     }
 
-    pub(crate) fn clone(&self) -> Self {
+    pub fn clone(&self) -> Self {
         Stream {
             id: self.id,
             conn: self.conn,
